@@ -1,6 +1,5 @@
-# Adonis fullstack application
 
-This is the fullstack boilerplate for AdonisJs, it comes pre-configured with.
+Este é o padrão completo do AdonisJs, vem pré-configurado com.
 
 1. Bodyparser
 2. Session
@@ -13,18 +12,20 @@ This is the fullstack boilerplate for AdonisJs, it comes pre-configured with.
 
 ## Setup
 
-Use the adonis command to install the blueprint
+
+Use o comando adonis para instalar o blueprint
 
 ```bash
-adonis new yardstick
+adonis new yardstick(Criação do novo projeto)
 ```
-
-or manually clone the repo and then run `npm install`.
+ 
+ou clonar manualmente o repositório e, em seguida, execute `npm install`.
 
 
 ### Migrations
 
-Run the following command to run startup migrations.
+
+Execute o seguinte comando para executar a inicialização migrations.
 
 ```js
 adonis migration:run
