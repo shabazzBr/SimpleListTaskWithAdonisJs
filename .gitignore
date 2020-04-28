@@ -1,0 +1,13 @@
+# Node modules
+node_modules
+package-lock.json
+
+tmp
+
+.env
+
+# Na verdade a base usada foi postgress
+database/*.sqlite
+
+.history
+.idea

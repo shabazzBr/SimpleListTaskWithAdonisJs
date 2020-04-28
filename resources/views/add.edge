@@ -1,0 +1,25 @@
+@layout('main')
+@section('content')
+<h4 class="mb-3">New Task</h4>
+
+<form action="{{route('/add')}}" method="POST">
+    {{csrfField()}}
+
+    <div class="mb=3">
+        <label for="">Title</label>
+        <input  id="title" type="text" class="form-control {{hasErrorFor('title') ? 'is-invalid' : ''}}" name="title" placeholder="Your title" value="">
+        {{elIf('<div class="invalid-feedback"> $self</div>',getErrorFor('title'),hasErrorFor('title')) }}
+    
+    </div>
+
+    <div class="mb=3">
+        <label for="">Title</label>
+        <textarea name="body"  name="body" class="form-control is-invalid" {{hasErrorFor('title') ? 'is-invalid' : ''}}" placeholder="body"></textarea>
+        {{elIf('<div class="invalid-feedback"> $self</div>',getErrorFor('body'),hasErrorFor('body')) }}
+    </div><br/>
+
+    <button type="submit" class="btn btn-danger btn-sm">Create Task <i class="fas fa-save"></i>&nbsp;&nbsp;</button>
+</form>
+
+
+@endsection

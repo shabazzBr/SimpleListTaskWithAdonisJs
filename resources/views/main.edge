@@ -1,0 +1,23 @@
+<!doctype html>
+<!-- Arquivo principal que irá cuidar do layout da aplicação (main.edge) -->
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {{ style('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css') }}
+    {{style('https://pro.fontawesome.com/releases/v5.10.0/css/all.css')}}
+    <title>Adonis todolist</title>
+  </head>
+  <body>
+    @include('inc/nav')
+    <div class="container">
+        @!section('content')
+    
+    </div>
+      {{script('https://code.jquery.com/jquery-3.4.1.slim.min.js')}}
+      {{script('https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js')}}
+      {{script('https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js')}}
+
+  </body>
+</html>
